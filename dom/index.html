@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--! tailwind cdn  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Dom Example</title>
+  </head>
+  <body>
+    <h1 class="text-5xl my-10 text-center">Todo List</h1>
+    <div class="container mx-auto w-1/2">
+      <form>
+        <div class="border flex">
+          <input
+            type="text"
+            id="todo-input"
+            placeholder="write me"
+            class="w-full p-3 relative z-90"
+          />
+          <button
+            type="submit"
+            id="add-todo"
+            class="border-1 px-6 bg-green-500 text-white"
+          >
+            Add
+          </button>
+        </div>
+      </form>
+      <div class="flex justify-end my-5">
+        <button class="p-3 px-5 bg-red-500 text-white" id="clear-all">
+          Clear
+        </button>
+      </div>
+      <ul class="border p-6 flex flex-col gap-y-4" id="todos">
+        <!-- <li class="flex justify-between border px-4 py-3 flex items-center">
+          <span>Todo Name</span>
+          <button class="text-red-400">Sil</button>
+        </li> -->
+      </ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
