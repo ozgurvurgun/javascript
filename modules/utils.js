@@ -35,11 +35,6 @@ export default hello;
   Utils.default;
 */
 
-/*
- dinamik import
-
-*/
-
 /* 
   default olarak export edilen ögeler farklı
   isimlendirmeler ile import edilebilir. default 
